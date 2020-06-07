@@ -144,6 +144,7 @@ export class Dashboard extends Component {
           <br></br>
           <br></br>
           <br></br>
+          <img src="https://miro.medium.com/max/4320/1*jFyawcsqoYctkTuZg6wQ1A.jpeg" alt="Coding monkey aka me" width="auto" height="550"></img>
         </div>
       );
     } else if (
@@ -156,7 +157,7 @@ export class Dashboard extends Component {
           <h4>{isSubscribed}</h4>
           <input
             type="button"
-            className="btn btn-success"
+            className="btn btn-danger"
             onClick={handleNewsletter}
             value={subButton}
           ></input>

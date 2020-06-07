@@ -4,7 +4,7 @@
     "username": "test",
     "email": "test@gmail.com",
     "password": "1234",
-    "newsletter": false
+    "newsletter": true
   },
   {
     "id": 2,
