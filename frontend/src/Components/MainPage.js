@@ -41,9 +41,9 @@ export class MainPage extends Component {
         </div>
         <div>
           <Dashboard
-            userLogedIn={this.state.isLogedIn}
+            loggedInUser={this.state.isLogedIn}
             currentUserId={this.state.userId}
-            loggedInUsername={this.state.logedInUsername}
+            currentUsername={this.state.logedInUsername}
             userNewsletter={this.state.newsletter}
             registerNewUser={this.state.registerNew}
           ></Dashboard>

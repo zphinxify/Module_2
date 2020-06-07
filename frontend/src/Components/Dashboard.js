@@ -32,6 +32,7 @@ export class Dashboard extends Component {
           password: password,
         },
       }).then(response => {
+        // See what response is returned by the express api
         console.log("registration response:", response);
       }).catch(error => {
         console.log("registration error:", error)
@@ -54,7 +55,7 @@ export class Dashboard extends Component {
         {
           userPut: {
             id: this.props.currentUserId,
-            username: this.props.loggedInUsername,
+            username: this.props.currentUsername,
             newsletter: putNews,
           },
         }
@@ -134,19 +135,19 @@ export class Dashboard extends Component {
         </div>
       );
     }
-    if (this.props.userLogedIn === false) {
+    if (this.props.loggedInUser === false) {
       return (
         <div>
           <h4>Please sign in or register!</h4>
         </div>
       );
     } else if (
-      this.props.userLogedIn === true // ||
+      this.props.loggedInUser === true // ||
       //(this.props.userLoggedIn === true && this.props.registerNewUser === true)
     ) {
       return (
         <div>
-          <h3>Welcome {this.props.loggedInUsername}!!</h3>
+          <h3>Welcome {this.props.currentUsername}!!</h3>
           <br></br>
           <h4>{isSubscribed}</h4>
           <input
