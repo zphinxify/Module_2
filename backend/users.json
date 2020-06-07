@@ -5,5 +5,12 @@
     "email": "test@gmail.com",
     "password": "1234",
     "newsletter": false
+  },
+  {
+    "id": 2,
+    "username": "zphinx",
+    "password": "1234",
+    "email": "zphinx@gmail.com",
+    "newsletter": false
   }
 ]

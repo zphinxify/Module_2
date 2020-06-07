@@ -86,18 +86,17 @@ export class Dashboard extends Component {
     }
 
     if (this.props.registerNewUser === true) {
-      const formStyle = {
-        color: "#282c34",
-        textAlign: "left",
+      const registerDesign = {
+        textAlign: "center",
         padding: "100px",
       };
       return (
         <div>
           <div>
-            <form style={formStyle} onSubmit={this.handleSubmit}>
+            <form style={registerDesign} onSubmit={this.handleSubmit}>
               <br></br>
               <br></br>
-              New User: <br></br>
+              Username: <br></br>
               <input
                 type="text"
                 name="username"
@@ -108,7 +107,7 @@ export class Dashboard extends Component {
               ></input>
               <br></br>
               <br></br>
-              New Email: <br></br>
+              User Email: <br></br>
               <input
                 type="email"
                 name="email"
@@ -138,20 +137,26 @@ export class Dashboard extends Component {
     if (this.props.loggedInUser === false) {
       return (
         <div>
-          <h4>Please sign in or register!</h4>
+        <br></br>
+        <br></br>
+        <br></br>
+          <h2>Welcome to the newsletter page</h2>
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
       );
     } else if (
-      this.props.loggedInUser === true // ||
-      //(this.props.userLoggedIn === true && this.props.registerNewUser === true)
+      this.props.loggedInUser === true 
     ) {
       return (
         <div>
-          <h3>Welcome {this.props.currentUsername}!!</h3>
+          <h3>Greetings, {this.props.currentUsername}</h3>
           <br></br>
           <h4>{isSubscribed}</h4>
           <input
             type="button"
+            className="btn btn-success"
             onClick={handleNewsletter}
             value={subButton}
           ></input>

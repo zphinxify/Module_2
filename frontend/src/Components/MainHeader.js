@@ -77,25 +77,25 @@ export class MainHeader extends Component {
   }
 
   render() {
+
+    // Basic styling for the header 
     const textStyle = {
       color: "#fff",
-      textAlign: "center",
+      textAlign: "center"
     };
     const headerStyle = {
-      background: "#898686",
-      height: "110px",
+      background: "#AEBCAF",
+      height: "105px",
       padding: "10px",
+      
     };
-    const formStyle = {
+    const registerDesign = {
       color: "#fff",
       textAlign: "left",
+      
     };
 
 
-    const registerButtonStyle = {
-      width: "90px",
-      float: "right",
-    };
     const left = {
       float: "left",
     };
@@ -107,28 +107,28 @@ export class MainHeader extends Component {
       return (
         <div>
           <header style={headerStyle}>
-            <h1 style={textStyle}>Newsletter</h1>
+          <br></br>
             <div style={left}>
-              <form onSubmit={this.handleSignIn} style={formStyle}>
-                Username{" "}
+              <form onSubmit={this.handleSignIn} style={registerDesign}>
+                Username{""}
                 <input
                   type="text"
                   name="username"
                   value={this.state.username}
                   onChange={this.handleChange}
-                ></input>{" "}
-                Password{" "}
+                ></input>{""}
+                Password{""}
                 <input
                   type="password"
                   name="password"
                   value={this.state.password}
                   onChange={this.handleChange}
-                ></input>{" "}
-                <button type="submit">Login</button>
+                ></input>{""}
+                <button type="submit" className="btn btn-success btn">Login</button>
               </form>
             </div>
             <div syle={right}>
-              <button onClick={this.handleRegister} style={registerButtonStyle} className="btn btn-success btn">
+              <button onClick={this.handleRegister} style={right} className="btn btn-success btn">
                 Register
               </button>
             </div>
@@ -139,8 +139,8 @@ export class MainHeader extends Component {
       return (
         <div>
           <header style={headerStyle}>
-            <h1 style={textStyle}>Newsletter</h1>
-            <form onSubmit={this.handleSignOut} style={formStyle}>
+            <h1 style={textStyle}>Logged in and everything, we gucci</h1>
+            <form onSubmit={this.handleSignOut} style={registerDesign}>
               <button  type="submit" className="btn btn-danger">
                 Sign Out
               </button>
