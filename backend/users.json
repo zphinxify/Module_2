@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "username": "John",
+    "email": "test@gmail.com",
+    "password": "test123",
+    "newsletter": true
+  },
+  {
+    "id": 3,
+    "username": "test",
+    "email": "myMail@gmail.com",
+    "password": "123",
+    "newsletter": false
+  },
+  {
+    "id": 4,
+    "username": "lala",
+    "email": "joelärsöt@gmail.com",
+    "password": "123",
+    "newsletter": true
+  },
+  {
+    "id": 4,
+    "username": "test123",
+    "password": "123",
+    "email": "123@mail.com",
+    "newsletter": false
+  },
+  {
+    "id": 5,
+    "username": "123",
+    "password": "123",
+    "email": "123@mail.com",
+    "newsletter": true
+  },
+  {
+    "id": 6,
+    "username": "joel",
+    "password": "joel",
+    "email": "joelsuger@joel.se",
+    "newsletter": false
+  },
+  {
+    "id": 7,
+    "username": "benji",
+    "password": "123",
+    "email": "benji@mail.se",
+    "newsletter": false
+  },
+  {
+    "id": 8,
+    "username": "notadmin",
+    "password": "123456",
+    "email": "fakeadmin@mail.se",
+    "newsletter": true
+  },
+  {
+    "id": 9,
+    "username": "jonte",
+    "password": "12345",
+    "email": "jonte@gmail.com",
+    "newsletter": true
+  },
+  {
+    "id": 10,
+    "username": "trygg",
+    "password": "123",
+    "email": "trygg@mail.com",
+    "newsletter": false
+  }
+]
