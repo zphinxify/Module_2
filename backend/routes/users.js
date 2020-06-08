@@ -25,8 +25,8 @@ router.post('/', function(req, res) {
           newsletter: userInFile.newsletter,
         };
         console.log("User logged in successfully!");
-        loginSuccess = userLoggedIn;
-        res.send(loginSuccess);
+        
+        res.send(userLoggedIn);
       }
     })
   })
